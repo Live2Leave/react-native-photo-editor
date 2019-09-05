@@ -405,7 +405,7 @@ public class PhotoEditorActivity extends AppCompatActivity implements View.OnCli
                 }
 
                 public void onFinish() {
-                    String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+                    String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmssSSS").format(new Date());
                     String imageName = "IMG_" + timeStamp + ".jpg";
                     Intent returnIntent = new Intent();
 
@@ -458,7 +458,7 @@ public class PhotoEditorActivity extends AppCompatActivity implements View.OnCli
             }
 
             public void onFinish() {
-                String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+                String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmssSSS").format(new Date());
                 String imageName = "/IMG_" + timeStamp + ".jpg";
 
                 // String selectedImagePath = getIntent().getExtras().getString("selectedImagePath");
